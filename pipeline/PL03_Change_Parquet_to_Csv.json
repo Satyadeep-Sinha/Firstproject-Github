@@ -1,0 +1,55 @@
+{
+	"name": "PL03_Change_Parquet_to_Csv",
+	"properties": {
+		"description": "Change file to parquet to CSV ",
+		"activities": [
+			{
+				"name": "Task_Change_file_to_parquet_to_CSV",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "officepocparquet/"
+					},
+					{
+						"name": "Destination",
+						"value": "officepocparquettocsv/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "DS03_Connect_Gzip_to_Parquet_Container",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS04_Connect_Parquet_to_Csv_Container",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2018-08-02T14:16:01Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,30 @@
+{
+	"name": "DS02_Connect_CSV_to_Gzip_Container",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pocazurestorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": ",",
+				"rowDelimiter": "",
+				"nullValue": "\\N",
+				"encodingName": null,
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": true
+			},
+			"compression": {
+				"type": "GZip",
+				"level": "Optimal"
+			},
+			"fileName": "",
+			"folderPath": "officepoccsvtogzip"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

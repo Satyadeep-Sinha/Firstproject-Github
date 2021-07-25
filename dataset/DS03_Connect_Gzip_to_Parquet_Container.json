@@ -1,0 +1,19 @@
+{
+	"name": "DS03_Connect_Gzip_to_Parquet_Container",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pocazurestorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "ParquetFormat"
+			},
+			"fileName": "",
+			"folderPath": "officepocgziptoparquet"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

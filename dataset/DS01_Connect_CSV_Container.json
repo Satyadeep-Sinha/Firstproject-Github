@@ -1,0 +1,20 @@
+{
+	"name": "DS01_Connect_CSV_Container",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pocazurestorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "JsonFormat",
+				"filePattern": "setOfObjects"
+			},
+			"fileName": "",
+			"folderPath": "jsonfile"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

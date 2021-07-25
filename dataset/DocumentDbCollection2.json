@@ -1,0 +1,15 @@
+{
+	"name": "DocumentDbCollection2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDb2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DocumentDbCollection",
+		"typeProperties": {
+			"collectionName": "Customers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,12 @@
+{
+	"name": "CosmosDb2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"connectionString": "AccountEndpoint=https://mycdb1.documents.azure.com:443/;Database=SalesData;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlBST0pFQ1RQT0NfYzEyMzYxOWYtYTc0My00YTRlLWJiOWYtOTUzMGU4ZjJiNGViIg0KfQ=="
+		}
+	}
+}

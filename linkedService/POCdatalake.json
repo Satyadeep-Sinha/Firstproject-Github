@@ -1,0 +1,14 @@
+{
+	"name": "POCdatalake",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://officedlakeasset1.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "d168941d-76a9-425c-98f9-638782547720",
+			"subscriptionId": "2704daaa-a9cf-4f22-9c0f-22e3b56c00e1",
+			"resourceGroupName": "officeasset"
+		},
+		"annotations": []
+	}
+}

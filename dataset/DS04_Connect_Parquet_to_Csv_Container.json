@@ -1,0 +1,23 @@
+{
+	"name": "DS04_Connect_Parquet_to_Csv_Container",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pocazurestorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"format": {
+				"type": "TextFormat",
+				"columnDelimiter": "\t",
+				"nullValue": "\\N",
+				"treatEmptyAsNull": true,
+				"skipLineCount": 0,
+				"firstRowAsHeader": false
+			},
+			"folderPath": "officepocparquettocsv"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

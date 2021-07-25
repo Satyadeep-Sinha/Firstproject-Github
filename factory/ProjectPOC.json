@@ -1,0 +1,9 @@
+{
+	"name": "ProjectPOC",
+	"location": "EastUS",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "226246fc-568f-4fa8-aa05-ca461034adb5",
+		"tenantId": "d168941d-76a9-425c-98f9-638782547720"
+	}
+}

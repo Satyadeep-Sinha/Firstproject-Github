@@ -1,0 +1,57 @@
+{
+	"name": "PL02_Change_Gzip_to_Parquet",
+	"properties": {
+		"description": "Change Gzip to parquet format",
+		"activities": [
+			{
+				"name": "Task_Change_Gzip_to_Parquet",
+				"description": "Change Gzip to Parquet format ",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "officepoccsvtogzip/"
+					},
+					{
+						"name": "Destination",
+						"value": "officepocgziptoparquet/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": false
+					},
+					"sink": {
+						"type": "BlobSink",
+						"copyBehavior": "PreserveHierarchy"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "Gzip_container",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS03_Connect_Gzip_to_Parquet_Container",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2020-10-15T11:30:54Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

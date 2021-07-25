@@ -1,0 +1,55 @@
+{
+	"name": "PL01_Change_CSV_to_GZIP",
+	"properties": {
+		"activities": [
+			{
+				"name": "Task_CSV_To_GZIP_Conversion",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": true,
+					"secureInput": true
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "officepoccsv/"
+					},
+					{
+						"name": "Destination",
+						"value": "officepoccsvtogzip/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BlobSource",
+						"recursive": false
+					},
+					"sink": {
+						"type": "BlobSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "DS01_Connect_CSV_Container",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS02_Connect_CSV_to_Gzip_Container",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2020-10-15T11:30:54Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

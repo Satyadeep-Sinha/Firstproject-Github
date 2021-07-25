@@ -1,0 +1,16 @@
+{
+	"name": "ADLSServices",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://officedlakeasset1.azuredatalakestore.net/webhdfs/v1",
+			"servicePrincipalId": "296d1c96-732e-4377-958b-9c8564e0be41",
+			"tenant": "d168941d-76a9-425c-98f9-638782547720",
+			"subscriptionId": "2704daaa-a9cf-4f22-9c0f-22e3b56c00e1",
+			"resourceGroupName": "officeasset",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlBST0pFQ1RQT0NfZTE5ZWRlNDAtMDAwZC00NWIyLWEwYjUtYjdkZGYwZTNhMzg1Ig0KfQ=="
+		}
+	}
+}
