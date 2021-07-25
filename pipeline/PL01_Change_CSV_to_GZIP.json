@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Task_CSV_To_GZIP_Conversion",
+				"name": "my_CSV_To_GZIP_Conversion",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
