@@ -1,0 +1,7 @@
+{
+	"name": "laptop-ir-cloud",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "IR for my laptop"
+	}
+}
