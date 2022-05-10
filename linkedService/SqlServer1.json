@@ -1,0 +1,18 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "abc",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=LAPTOP-T5GN4Q11;initial catalog=Training_Source_database",
+			"userName": "LAPTOP-T5GN4Q11\\Satyadeep",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwOTI3NTZhNC1jY2IwLTRiODMtOGIwZC1jYWNkZjg5M2VhN2MiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "laptop-ir-cloud",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
